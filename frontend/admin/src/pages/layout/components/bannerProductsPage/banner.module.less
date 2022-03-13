@@ -1,0 +1,27 @@
+.container {
+    margin: @margin-md 0;
+}
+
+.title {
+    font-weight: @font-weight-base + 100;
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: @margin-xs;
+    .banner {
+        flex: 0 0 100%;
+    }
+}
+
+.banner {
+    img {
+        max-width: 95%;
+        &:nth-child(odd) {
+            margin-bottom: @margin-xs;
+        }
+    }
+}

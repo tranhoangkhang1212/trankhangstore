@@ -1,0 +1,41 @@
+.preview {
+    box-shadow: 0 0 15px 5px #ccc;
+    border-radius: @border-radius-base;
+    position: fixed;
+    right: 20px;
+    width: 720px;
+}
+
+.container {
+    height: 96vh;
+    overflow: scroll;
+    margin-top: @margin-md;
+}
+
+.btn_save {
+    text-align: right;
+    position: relative;
+    button {
+        padding: 0 35px;
+        margin-top: @margin-xs;
+        margin-right: @margin-md;
+        &:hover {
+            background-color: @primary-color;
+        }
+    }
+    span {
+        color: @black;
+        font-weight: @font-weight-base;
+    }
+}
+
+.dot {
+    position: absolute;
+    background-color: #6fd487;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-65%);
+}

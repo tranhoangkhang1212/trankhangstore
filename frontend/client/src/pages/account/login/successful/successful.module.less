@@ -1,0 +1,34 @@
+.user_info {
+    display: flex;
+    align-items: center;
+    cursor: default;
+    p {
+        font-size: @font-size-base !important;
+    }
+    span {
+        cursor: pointer;
+        font-size: @font-size-lg+ 2px !important;
+    }
+    i {
+        font-size: @font-size-lg * 1.5;
+        color: @white;
+        margin-right: @margin-md;
+    }
+}
+
+.content {
+    font-size: @font-size-lg;
+    > a {
+        margin-bottom: @margin-xs;
+    }
+    a {
+        display: block;
+        color: @black;
+        &:hover {
+            color: @link-color;
+        }
+        i {
+            margin-right: 20px;
+        }
+    }
+}

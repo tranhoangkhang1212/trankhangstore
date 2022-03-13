@@ -1,0 +1,48 @@
+.carousel {
+    margin: @margin-md 0;
+    img {
+        max-width: 100%;
+        border-radius: @border-radius-base;
+        cursor: pointer;
+    }
+}
+
+.main_slider {
+    img {
+        height: 300px;
+        width: 100%;
+    }
+    button {
+        display: none !important;
+    }
+}
+
+.mini_slider {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: @padding-md;
+    text-align: right;
+    .mini_item {
+        flex: 0 0 50%;
+        max-width: 50%;
+        &:nth-child(3),
+        &:nth-child(4) {
+            margin-top: @margin-xs;
+        }
+        img {
+            height: 146px;
+        }
+    }
+}
+
+@media screen and (max-width: @screen-lg) {
+    .main_slider {
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+    .mini_slider {
+        display: none;
+    }
+}

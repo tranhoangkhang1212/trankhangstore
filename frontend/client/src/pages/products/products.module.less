@@ -1,0 +1,34 @@
+.container {
+    margin: @margin-md @margin-0;
+}
+
+.brands {
+    margin: @margin-md @margin-0;
+    img {
+        margin-bottom: @margin-xs;
+        cursor: pointer;
+        max-width: 150px;
+        border: 1px solid #ccc;
+        border-radius: @border-radius-base*2;
+        &:hover {
+            transition: @transition-basic;
+            border: 1px solid @link-color;
+        }
+    }
+    a {
+        &:not(:last-child) {
+            margin-right: @margin-md;
+        }
+    }
+}
+
+.sort {
+    display: flex;
+    margin-bottom: @margin-md;
+    &_title {
+        margin-right: @margin-md;
+        i {
+            margin-right: @margin-xs;
+        }
+    }
+}

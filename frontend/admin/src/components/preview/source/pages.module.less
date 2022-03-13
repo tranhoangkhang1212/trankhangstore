@@ -1,0 +1,38 @@
+.main {
+    zoom: 0.65;
+    height: 1060px;
+    overflow-y: scroll;
+    margin: @margin-md 0 @margin-md @margin-md;
+    padding-right: @padding-xs;
+    &::-webkit-scrollbar {
+        display: block;
+        width: 15px;
+    }
+}
+
+.container {
+    max-width: @width-xl;
+    margin: 0 auto;
+    min-height: 45vh;
+}
+
+@media screen and (max-width: @width-lg) {
+    .container {
+        max-width: @width-lg;
+    }
+}
+@media screen and (max-width: @width-md) {
+    .container {
+        max-width: @width-md;
+    }
+}
+@media screen and (max-width: @width-sm) {
+    .container {
+        max-width: @width-sm;
+    }
+}
+@media screen and (max-width: @width-xs) {
+    .container {
+        max-width: @width-xs;
+    }
+}

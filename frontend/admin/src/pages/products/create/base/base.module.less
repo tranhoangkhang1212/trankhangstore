@@ -1,0 +1,44 @@
+.product_data {
+    margin-top: @margin-lg + 3px;
+    input {
+        border: 2px solid #ccc;
+        height: 35px;
+    }
+    label {
+        margin-top: @margin-md;
+        display: block;
+    }
+}
+
+.brand_rate  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+        border: 2px solid #ccc;
+        height: 35px;
+    }
+    div {
+        flex: 0 0 48%;
+    }
+}
+
+.select {
+    width: 100%;
+}
+
+.brand, .rate {
+    margin-top: @margin-md;
+    margin-bottom: 0;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 100%;
+        &:nth-child(2) {
+            padding: 0 @padding-xs;
+        }
+    }
+}

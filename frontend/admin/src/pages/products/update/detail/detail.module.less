@@ -1,0 +1,56 @@
+.container {
+    border-left: 1px solid #ccc;
+    padding-left: @padding-md;
+    height: 90vh;
+    overflow-y: scroll;
+    input {
+        height: 35px;
+        border: 2px solid #ccc;
+        width: 100%;
+    }
+    TextArea {
+        border: 2px solid #ccc;
+    }
+    label {
+        margin-top: @margin-xs;
+    }
+}
+
+.select_product {
+    margin-bottom: 0;
+}
+
+.first_detail {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_content {
+        flex: 0 0 48%;
+        margin: 0;
+    }
+}
+
+.second_details {
+    &_content {
+        margin: 0;
+    }
+}
+
+.title {
+    margin-bottom: 0;
+    margin-top: @margin-md;
+}
+
+.submit {
+    width: 100%;
+    margin-top: @margin-md;
+    span {
+        color: @black;
+        font-weight: @font-weight-base;
+    }
+}
+
+.description {
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+}

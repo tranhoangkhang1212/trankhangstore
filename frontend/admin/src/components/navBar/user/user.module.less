@@ -1,0 +1,43 @@
+.user_info {
+    position: absolute;
+    bottom: 5%;
+    left: @margin-lg;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    h3 {
+        margin-bottom: 0;
+        color: @white;
+    }
+    i {
+        color: @white;
+        font-size: 18px;
+        border: 2px solid #ccc;
+        border-radius: 50%;
+        padding: @padding-xs;
+        margin-right: @margin-md;
+    }
+}
+
+.user_touch {
+    > div:first-child {
+        margin-bottom: @margin-xs;
+    }
+    div {
+        display: flex;
+        align-items: center;
+        h4 {
+            margin-bottom: 0;
+        }
+    }
+    i {
+        margin-right: @margin-xs;
+    }
+    .logout {
+        cursor: pointer;
+    }
+}

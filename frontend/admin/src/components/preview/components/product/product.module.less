@@ -1,0 +1,47 @@
+.product {
+    background-color: @white;
+    min-height: 455px;
+    padding: @padding-md @padding-xs;
+    border: 1px @border-style-base rgb(238, 238, 238);
+    cursor: pointer;
+    img {
+        max-width: 100%;
+        transition: @transition-basic;
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+    a {
+        color: @black;
+        &:hover {
+            color: @link-color;
+        }
+    }
+    h3,
+    p {
+        margin: 0;
+    }
+    &_content {
+        margin-top: @margin-sm;
+        padding-left: @padding-sm;
+    }
+    .rate {
+        color: @primary-color;
+    }
+}
+
+.discount {
+    margin-top: @margin-sm;
+    position: relative;
+    span {
+        position: absolute;
+        top: -5px;
+        left: 85px;
+    }
+}
+
+@media screen and (max-width: @screen-md) {
+    .product {
+        min-height: 532px;
+    }
+}

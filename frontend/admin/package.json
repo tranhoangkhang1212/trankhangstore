@@ -1,0 +1,72 @@
+{
+    "name": "frontend",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@ant-design/icons": "^4.7.0",
+        "@ckeditor/ckeditor5-build-classic": "^31.1.0",
+        "@ckeditor/ckeditor5-react": "^3.0.3",
+        "@craco/craco": "^6.4.2",
+        "@fortawesome/fontawesome-svg-core": "^1.3.0",
+        "@fortawesome/free-regular-svg-icons": "^6.0.0",
+        "@fortawesome/free-solid-svg-icons": "^6.0.0",
+        "@fortawesome/react-fontawesome": "^0.1.17",
+        "@testing-library/jest-dom": "^5.11.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^12.1.10",
+        "ahooks": "^3.1.5",
+        "antd": "^4.17.2",
+        "axios": "^0.24.0",
+        "craco-antd": "^1.19.0",
+        "craco-less": "^1.20.0",
+        "dotenv": "^11.0.0",
+        "imgbb-uploader": "^1.3.5",
+        "less": "^4.1.2",
+        "less-loader": "^10.2.0",
+        "markdown-it": "^12.3.2",
+        "moment": "^2.29.1",
+        "prettier": "2.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-html-parser": "^2.0.2",
+        "react-images-uploading": "^3.1.3",
+        "react-markdown-editor-lite": "^1.3.2",
+        "react-redux": "^7.2.6",
+        "react-router-dom": "6",
+        "react-scripts": "4.0.3",
+        "react-slick": "^0.28.1",
+        "redux": "^4.1.2",
+        "redux-thunk": "^2.4.1",
+        "slick-carousel": "^1.8.1",
+        "styled-components": "^5.3.3",
+        "suneditor": "^2.42.0",
+        "suneditor-react": "^3.3.1",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "PORT=5000 craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject",
+        "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|less|md)\" --tab-width 4 --single-quote true --jsx-single-quote true --print-width 60 --bracket-same-line false --jsx-bracket-same-line false --arrow-parens avoid --no-semi false",
+        "dev": "docker-compose -f docker-compose.dev.yml up"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}

@@ -1,0 +1,43 @@
+.container {
+    overflow-y: scroll;
+    margin-top: @margin-md;
+}
+
+.title {
+    font-size: @font-size-base + 15px;
+    input {
+        border: 0;
+        background-color: @white;
+        width: 100%;
+        &:focus {
+            outline: 0;
+        }
+    }
+}
+
+.summary {
+    margin: @margin-md 0;
+    textArea {
+        width: 100%;
+        padding: @padding-xs;
+        border-radius: @border-radius-base;
+    }
+}
+
+.author {
+    margin: @margin-md 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input {
+        padding: @padding-xss @padding-xs;
+        width: 50%;
+    }
+    button {
+        font-weight: @font-weight-base;
+        width: 20%;
+        span {
+            color: @black;
+        }
+    }
+}

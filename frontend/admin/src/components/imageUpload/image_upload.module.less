@@ -1,0 +1,36 @@
+.upload_wrapper {
+    position: relative;
+    > button {
+        cursor: pointer;
+        font-weight: @font-weight-base;
+        svg {
+            margin-left: @margin-xs;
+        }
+    }
+}
+
+.upload {
+    img {
+        margin-top: @margin-md;
+        max-width: 120px;
+    }
+}
+
+.btn_upload {
+    border: 2px solid #ccc;
+    margin-right: @margin-xs;
+    &:hover {
+        color: @black;
+    }
+    &[disabled] {
+        border: 2px solid #ccc;
+        &:hover {
+            border: 2px solid #ccc;
+        }
+    }
+}
+
+.title {
+    margin-top: @margin-md;
+    margin-bottom: 0;
+}

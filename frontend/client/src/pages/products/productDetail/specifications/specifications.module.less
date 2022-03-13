@@ -1,0 +1,31 @@
+.container {
+    border-top: 1px solid #ccc;
+    padding-top: @padding-md;
+    img {
+        max-width: 100%;
+    }
+}
+
+.spec {
+    padding-left: @padding-lg;
+    ul {
+        list-style: none;
+        padding: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        li {
+            padding: @padding-md - 2px @padding-md;
+            display: flex;
+        }
+        span {
+            width: 30%;
+        }
+        p {
+            text-align: left;
+            margin: 0;
+        }
+        li:nth-child(odd) {
+            background-color: #f5f5f5;
+        }
+    }
+}

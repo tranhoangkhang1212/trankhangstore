@@ -1,0 +1,42 @@
+.dropdown {
+    position: absolute;
+    background-color: @white;
+    box-shadow: 0 0 5px 2px rgb(196, 196, 196);
+    z-index: 999;
+    border-radius: @border-radius-base * 2;
+    min-width: 40%;
+    height: 400px;
+    overflow-y: scroll;
+    a {
+        color: @black;
+    }
+    h3 {
+        margin: 0;
+        font-weight: @font-weight-base + 100;
+    }
+    .title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #ccc;
+        padding: @padding-xs @padding-md;
+        i {
+            cursor: pointer;
+        }
+    }
+}
+
+.content {
+    display: flex;
+    margin: @margin-xs;
+    margin-bottom: @margin-md;
+    border-bottom: 1px solid #ccc;
+    img {
+        max-width: 50px;
+        margin-right: @margin-xs;
+        margin-top: @margin-xss;
+    }
+    p {
+        margin: 0;
+    }
+}

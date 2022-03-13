@@ -1,0 +1,57 @@
+.register {
+    width: 45%;
+    margin: @margin-lg * 2 auto;
+    h2 {
+        text-align: center;
+        margin-bottom: @margin-lg;
+        display: block;
+        position: relative;
+        &::after {
+            content: '';
+            background-color: @primary-color;
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            left: 25%;
+            top: 0;
+            z-index: -1;
+            transform: skew(-35deg);
+        }
+    }
+    input,
+    .password {
+        border: @border-width-base @border-style-base #ccc;
+    }
+    .btn {
+        display: flex;
+        justify-content: space-between;
+        div {
+            flex: 0 0 48%;
+        }
+        button {
+            width: 100%;
+            color: @black;
+            font-weight: @font-weight-base;
+        }
+        a {
+            font-size: @font-size-lg;
+            font-weight: @font-weight-base;
+            border: @border-base;
+            color: @black;
+            display: block;
+            text-align: center;
+            padding: @padding-xs - 1px 0;
+            border-radius: @border-radius-base;
+            transition: @transition-basic;
+            &:hover {
+                background-color: @primary-color;
+            }
+        }
+    }
+    .checkbox {
+        span {
+            font-size: @font-size-lg;
+            font-weight: @font-weight-base;
+        }
+    }
+}

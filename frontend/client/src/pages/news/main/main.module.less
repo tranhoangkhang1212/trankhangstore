@@ -1,0 +1,30 @@
+.main {
+    padding-right: @padding-lg;
+}
+
+.item {
+    padding: 0 @padding-xs;
+    margin-bottom: @margin-lg * 2;
+    h3 {
+        margin-bottom: 0;
+        margin-top: @margin-xs;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        transition: @transition-basic;
+        cursor: pointer;
+        &:hover {
+            color: @link-color;
+        }
+    }
+    img {
+        max-width: 100%;
+        border-radius: @border-radius-base;
+    }
+}
+
+.item_content {
+    margin-top: @margin-xs;
+}

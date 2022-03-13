@@ -1,0 +1,10 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule ^all$ get_all.php [NC,L]
+RewriteRule ^create$ create.php [NC,L]
+RewriteRule ^order_now/create$ create_order_now.php [NC,L]
+RewriteRule ^order-now$ order_now.php [NC,L]
+RewriteRule ^id=([0-9_-]*)$ get_by_id.php?id=$1 [NC,L]
+RewriteRule ^phone=([0-9_-]*)$ get_by_phone.php?phone=$1 [NC,L]
+RewriteRule ^delete/id=([0-9_-]*)$ delete.php?id=$1 [NC,L]
+RewriteRule ^order-now/delete/id=([0-9_-]*)$ delete_order_now.php?id=$1 [NC,L]
+RewriteRule ^update-type/id=([0-9_-]*)$ update_type.php?id=$1 [NC,L]

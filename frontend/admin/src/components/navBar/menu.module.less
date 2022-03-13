@@ -1,0 +1,32 @@
+.menu {
+    min-height: 100vh;
+    position: relative;
+}
+
+.logo {
+    padding: @padding-md;
+    display: flex;
+    justify-content: space-between;
+    img {
+        max-width: 50%;
+    }
+    i {
+        color: @white;
+        position: relative;
+        &::after {
+            content: 'View on site';
+            font-family: 'Roboto', sans-serif;
+            font-weight: @font-weight-base;
+            position: absolute;
+            top: 20px;
+            left: -70px;
+            white-space: nowrap;
+            display: none;
+        }
+        &:hover {
+            &::after {
+                display: block;
+            }
+        }
+    }
+}
